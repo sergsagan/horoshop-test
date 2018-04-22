@@ -1,15 +1,23 @@
 //Color
 
-$base-color: rgb(136, 136, 136);
+$base-color: rgb(255, 255, 255);
 
-$stack-color: rgb(175, 70, 26);
+$stack-color: rgb(32, 115, 179);
 
-
-//Font-size
-
-
+$dark-color: rgb(0, 0, 0);
 
 //Font-Family
 
 
-$Ubuntu: 'Ubuntu', sans-serif;
+$OpenSans: 'Open Sans', sans-serif;
+$ArialReg: 'Arial-Regular', sans-serif;
+$ArialBold: 'Arial-Bold', sans-serif;
+
+.style_bold {
+  font-family: $ArialBold;
+  font-weight: 700;
+}
+.style_normal {
+  font-family: $ArialReg;
+  font-weight: 400;
+}

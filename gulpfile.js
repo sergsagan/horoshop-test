@@ -113,43 +113,15 @@ var cssFilter = gulpFilter('**/*.css');
 gulp.task('styles:vendor', function() {
   gulp.src(mainBowerFiles({
           "overrides": {
-	          "bootstrap": {
-		          "main": [
-			          './dist/css/bootstrap.css',
-			          './dist/fonts/*.*'
-		          ]
-	          },
-            /*
+
               "normalize.css": {
                   "main": "./normalize.css"
-              },*/
-
-              "magnific-popup": {
-                  "main": "./dist/magnific-popup.css"
               },
 
-              "slick-carousel": {
-                  "main": [
-                      "./slick/slick.css",
-                      "./slick/slick-theme.css",
-                      "./slick/fonts/!*.*"
-                  ]
-              },
+              "select2":{
+                  "main": "./dist/css/select2.css"
+              }
 
-              "ionrangeslider": {
-                  "main": [
-                      './css/ion.rangeSlider.css',
-                      './css/ion.rangeSlider.skinHTML5.css'
-                  ]
-              },
-
-              "jquery.form-styler": {
-                  "main": "./dist/jquery.formstyler.css"
-              },
-              
-	          "wow": {
-		          "main": "./css/libs/animate.css"
-	          }
           }
   }))
   .pipe(cssFilter)
@@ -185,38 +157,9 @@ gulp.task('js:vendor', function() {
               "jquery": {
                   "main": "./dist/jquery.min.js"
               },
-	
-	          "bootstrap": {
-		          "main": './dist/js/bootstrap.min.js'
-	          },
-              
-	          "magnific-popup": {
-                  "main": "./dist/jquery.magnific-popup.min.js"
-              },
-
-             "slick-carousel": {
-                  "main": "./slick/slick.min.js"
-              },
-	
-	          "bxslider-4": {
-		          "main": './dist/jquery.bxslider.min.js'
-	          },
-
-              "jquery.maskedinput": {
-                  "main": "./dist/jquery.maskedinput.min.js"
-              },
-
-              "jquery.form-styler": {
-                  "main": "./dist/jquery.formstyler.min.js"
-              },
-
-              "readmore-js": {
-                  "main": "./readmore.js"
-              },
-	
-	          "wow": {
-		          "main": "./dist/wow.min.js"
-	          }
+              "select2":{
+                  "main": "./dist/js/select2.min.js"
+              }
           }
   }))
       .pipe(jsFilter)
