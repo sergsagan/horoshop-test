@@ -2,15 +2,17 @@
   width: 100%;
   max-width: 1230px;
   margin: 0 auto;
+
+  h2.heading {
+    margin: 0 auto 25px;
+    color: rgb(35, 31, 32);
+    font-family: $OpenSans;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+  }
 }
-h2.section-heading {
-  margin: 0 auto 25px;
-  color: rgb(35, 31, 32);
-  font-family: $OpenSans;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 32px;
-}
+
 .container{
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
@@ -25,6 +27,15 @@ h2.section-heading {
   max-width: 810px;
   height: auto;
   margin: 0 15px 50px 0;
+
+  .heading{
+    color: rgb(35,31,32);
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    @extend .style_bold;
+  }
 }
 .your-order{
   display: inline-block;
@@ -37,15 +48,6 @@ h2.section-heading {
   border: 1px solid rgb(224, 223, 202);
   border-radius: 3px;
 
-  &__heading{
-    color: rgb(35,31,32);
-    font-size: 18px;
-    line-height: 32px;
-    margin-bottom: 15px;
-    padding-left: 30px;
-    @extend .style_bold;
-  }
-
   &__amount{
     color: $dark-color;
     font-size: 18px;
@@ -53,6 +55,14 @@ h2.section-heading {
     display: block;
     text-align: right;
     padding-right: 15px;
+    @extend .style_bold;
+  }
+  .heading{
+    color: rgb(35,31,32);
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 15px;
+    padding-left: 30px;
     @extend .style_bold;
   }
 }
@@ -141,21 +151,25 @@ h2.section-heading {
   background-color: $base-color;
   border: 1px solid rgb(224, 223, 202);
   padding: 30px 0;
+
+  &_active {
+    display: block;
+  }
+
+  .heading, .form-group label.heading{
+    color: rgb(35,31,32);
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    @extend .style_bold;
+  }
+  .form-group label.heading{
+    padding-left: 0;
+  }
 }
-.tabs__content_heading, .form-group label.tabs__content_heading{
-  color: rgb(35,31,32);
-  font-size: 18px;
-  line-height: 32px;
-  margin-bottom: 20px;
-  padding-left: 30px;
-  @extend .style_bold;
-}
-.form-group label.tabs__content_heading{
-  padding-left: 0;
-}
-.tabs__content_active {
-  display: block;
-}
+
+
 
 //style table
 

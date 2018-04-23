@@ -9,10 +9,10 @@
   .wrapper {
     padding: 35px 10px;
   }
-  h2.section-heading {
+  h2.heading {
     text-align: center;
   }
-  .tabs__content_heading, .form-group label.tabs__content_heading {
+  .tabs__content .heading, .form-group label.heading {
     margin-bottom: 10px;
   }
   .form-group .select2-container {
@@ -26,6 +26,9 @@
     width: 100px;
     font-size: 15px;
   }
+  .form-group_long .select2-container {
+    max-width: 360px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -37,9 +40,7 @@
     max-width: 390px;
     margin: 0;
   }
-  h2.section__heading {
-    max-width: 910px;
-  }
+
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1199px) {
@@ -51,6 +52,9 @@
   }
   .ordering {
     max-width: 940px;
+  }
+  .form-group_long .select2-container {
+    max-width: 360px;
   }
 }
 
