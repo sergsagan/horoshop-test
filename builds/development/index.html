@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html class="ie8"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Test</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+
+    <section class="ordering">
+        <h2 class="section-heading">Оформление заказа</h2>
+        <div class="container">
+            <div class="information">
+                <div class="tabs">
+                    <ul class="tabs__caption">
+                        <li class="active"><a href="#">Я новый<br> покупатель</a></li>
+                        <li><a href="#">Я зарегистрированный<br> покупатель</a></li>
+                    </ul>
+
+                    <div class="tabs__content tabs__content_active">
+                        <form>
+                            <h4 class="tabs__content_heading">Получатель заказа</h4>
+                            <div class="form-group">
+                                <label for="name">Имя и фамилия</label>
+                                <input type="text" class="form-control" id="name"  placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" class="form-control" id="phone"  placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="city">Город</label>
+                                <input type="text" class="form-control" id="city"  placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="city">Эл.почта</label>
+                                <input type="email" class="form-control" id="email"  placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="city"></label>
+                                <a class="add-comment" href="#">Добавить комментарий к заказу</a>
+                                <textarea class="form-comment" name="comment" placeholder=""></textarea>
+                            </div>
+                            <div class="form-line"></div>
+                            <div class="form-group form-group_inner">
+                                <label class="tabs__content_heading" for="delivery-new">Доставка</label>
+                                <select name="" id="delivery-new">
+                                    <option></option>
+                                    <option value="1">«Новая почта» — 25 грн.</option>
+                                    <option value="2">«Новая почта» — 50 грн.</option>
+                                    <option value="3">«Новая почта» — 75 грн.</option>
+                                </select>
+                            </div>
+                            <div class="form-group form-group_long">
+                                <label class="" for="address-new">Адресс склада</label>
+                                <select name="" id="address-new">
+                                    <option></option>
+                                    <option value="1">Львов, Отделение №8 (до 30 кг): ул. Гетьмана И. Мазепы, 37</option>
+                                    <option value="2">Львов, Отделение №12 (до 30 кг): ул. Сагайдачного, 5</option>
+                                    <option value="3">Львов, Отделение №35 (до 45 кг): ул. Строителей, 135</option>
+                                </select>
+                            </div>
+                            <div class="form-line"></div>
+                            <div class="form-group form-group_inner">
+                                <label class="tabs__content_heading" for="payment-new">Оплата</label>
+                                <select name="" id="payment-new">
+                                    <option></option>
+                                    <option value="1">наложеный платёж</option>
+                                    <option value="2">безналичными</option>
+                                    <option value="3">наличными</option>
+                                </select>
+                            </div>
+                            <div class="form-line"></div>
+                            <div class="form-group form-group_inner">
+                                <label for=""></label>
+                                <a href="#" class="btn btn-form">Оформить заказ</a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="tabs__content">
+                        <form action="">
+                            <h4 class="tabs__content_heading">Получатель заказа</h4>
+                            <div class="form-group">
+                                <label for="fulname">Имя и фамилия</label>
+                                <input type="text" class="form-control" id="fulname"  placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Ваш пароль</label>
+                                <input type="password" class="form-control" id="password"  placeholder="">
+                            </div>
+                            <div class="form-line"></div>
+                            <div class="form-group form-group_inner">
+                                <label class="tabs__content_heading" for="delivery">Доставка</label>
+                                <select name="" id="delivery">
+                                    <option></option>
+                                    <option value="1">«Новая почта» — 25 грн.</option>
+                                    <option value="2">«Новая почта» — 50 грн.</option>
+                                    <option value="3">«Новая почта» — 75 грн.</option>
+                                </select>
+                            </div>
+                            <div class="form-group form-group_long">
+                                <label class="" for="address">Адресс склада</label>
+                                <select name="" id="address">
+                                    <option></option>
+                                    <option value="1">Львов, Отделение №8 (до 30 кг): ул. Гетьмана И. Мазепы, 37</option>
+                                    <option value="2">Львов, Отделение №12 (до 30 кг): ул. Сагайдачного, 5</option>
+                                    <option value="3">Львов, Отделение №35 (до 45 кг): ул. Строителей, 135</option>
+                                </select>
+                            </div>
+                            <div class="form-line"></div>
+                            <div class="form-group form-group_inner">
+                                <label class="tabs__content_heading" for="payment">Оплата</label>
+                                <select name="" id="payment">
+                                    <option></option>
+                                    <option value="1">наложеный платёж</option>
+                                    <option value="2">безналичными</option>
+                                    <option value="3">наличными</option>
+                                </select>
+                            </div>
+                            <div class="form-line"></div>
+                            <div class="form-group form-group_inner">
+                                <label for=""></label>
+                                <a href="#" class="btn btn-form">Оформить заказ</a>
+                            </div>
+                        </form>
+                    </div>
+
+                </div><!--end-tabs-->
+            </div><!--end-information-->
+            <div class="your-order">
+                <h4 class="your-order__heading">Ваш заказ</h4>
+                <div class="your-order__line"></div>
+                <table>
+                    <tr>
+                        <td><img src="img/image-1.png" alt="pic"></td>
+                        <td><a href="#">Цифровий фотоапарат Nikon D5100 kit (18-55 VR)</a><span class="product-value"><span class="product-value__price">6 568 грн.</span><span> × </span><span class="product-value__quantity">1 шт.</span><span class="product-value__total">6 568 грн.</span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="delimiter" colspan="2"><div class="your-order__line"></div></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/image-2.png" alt="pic"></td>
+                        <td><a href="#">MP3-плеер Apple iPod Touch 5Gen 32Gb blue</a><span class="product-value"><span class="product-value__price">3 689 грн.</span><span> × </span><span class="product-value__quantity">1 шт.</span><span class="product-value__total">3 689 грн.</span></span></td>
+                    </tr>
+                </table>
+                <div class="your-order__line"></div>
+                <span class="your-order__amount">9 769,15 грн.</span>
+            </div><!--end-your-order-->
+        </div><!--end-container-->
+    </section><!--end-ordering-->
+</div>
+    <script defer src="js/vendor.js"></script>
+    <script defer src="js/script.js"></script>
+</body>
+</html>
